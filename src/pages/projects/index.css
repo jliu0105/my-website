@@ -1,0 +1,16 @@
+.projects {
+  position: relative;
+}
+
+.projects-header {
+  font-size: 400%;
+  padding-top: 10%;
+  /* background-color: pink; */
+}
+.projects-content {
+    position: relative;
+  width: 80%;
+  margin-left: 10%;
+  height: 2000px;
+  /* background-color: cadetblue; */
+}
