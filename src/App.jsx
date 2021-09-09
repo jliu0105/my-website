@@ -1,5 +1,5 @@
 import logo from "./logo.svg";
-import { BrowserRouter, Route, Switch } from "react-router-dom";
+import { BrowserRouter, Route, Switch, HashRouter } from "react-router-dom";
 import HomePage from "./pages/homePage";
 import Projects from "./pages/projects";
 import ReactTravelWebsite from "./pages/projectsInfo/reactTravelWebsite";
