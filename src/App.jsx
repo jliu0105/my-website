@@ -22,7 +22,7 @@ import "./App.css";
 function App() {
   return (
     <div className="App">
-      <BrowserRouter>
+      <HashRouter>
         <Switch>
           <Route exact path="/" component={HomePage} />
           <Route exact path="/projects" component={Projects}></Route>
@@ -42,7 +42,7 @@ function App() {
           <Route exact path="/education/ece140" component={Ece140}></Route>
           <Route exact path="/education/ece108" component={Ece108}></Route>
         </Switch>
-      </BrowserRouter>
+      </HashRouter>
     </div>
   );
 }
