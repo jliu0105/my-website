@@ -10,6 +10,13 @@ import MineSweeper from "./pages/projectsInfo/mineSweeper";
 import HistoryTransaction from "./pages/projectsInfo/historyTransaction";
 import ReactThermalGraph from "./pages/projectsInfo/reactThermalGraph";
 import arduinoWaterLevelSensor from "./pages/projectsInfo/arduinoWaterLevelSensor";
+
+
+import AIPaintingStyleDetector from "./pages/projectsInfo/AIPaintingStyleDetector";
+import AITranslator from "./pages/projectsInfo/AITranslator";
+
+
+import VideoPlayerC from "./pages/projectsInfo/videoPlayerC";
 import Education from "./pages/education";
 import Ece150 from "./pages/educationInfo/ece150";
 import Math115 from "./pages/educationInfo/math115";
@@ -17,6 +24,10 @@ import Math117 from "./pages/educationInfo/math117";
 import Ece124 from "./pages/educationInfo/ece124";
 import Ece140 from "./pages/educationInfo/ece140";
 import Ece108 from "./pages/educationInfo/ece108";
+
+import Ece222 from "./pages/educationInfo/ece222";
+import MachineLearningAndrewNg from "./pages/educationInfo/machineLearningAndrewNg";
+import DeepLearningAndrewNg from "./pages/educationInfo/deepLearningAndrewNg";
 import "./App.css";
 
 function App() {
@@ -34,6 +45,13 @@ function App() {
           <Route exact path="/projects/historyTransaction" component={HistoryTransaction}></Route>
           <Route exact path="/projects/reactThermalGraph" component={ReactThermalGraph}></Route>
           <Route exact path="/projects/arduinoWaterLevelSensor" component={arduinoWaterLevelSensor}></Route>
+          <Route exact path="/projects/videoPlayerC" component={VideoPlayerC}></Route>
+          <Route exact path="/projects/AIPantingStyleDetector" component={AIPaintingStyleDetector}></Route>
+          <Route exact path="/projects/AITranslator" component={AITranslator}></Route>
+
+          
+
+
           <Route exact path="/education" component={Education}></Route>
           <Route exact path="/education/ece150" component={Ece150}></Route>
           <Route exact path="/education/math115" component={Math115}></Route>
@@ -41,6 +59,10 @@ function App() {
           <Route exact path="/education/ece124" component={Ece124}></Route>
           <Route exact path="/education/ece140" component={Ece140}></Route>
           <Route exact path="/education/ece108" component={Ece108}></Route>
+
+          <Route exact path="/education/ece222" component={Ece222}></Route>
+          <Route exact path="/education/machineLearningAndrewNg" component={MachineLearningAndrewNg}></Route>
+          <Route exact path="/education/deepLearningAndrewNg" component={DeepLearningAndrewNg}></Route>
         </Switch>
       </HashRouter>
     </div>

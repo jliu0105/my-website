@@ -19,7 +19,7 @@ const EducationDetail = (props) => {
           {" "}
           <Title level={2}>{title}</Title>
         </div>
-        <div className="project-detail-description">{description}</div>
+        <div className="project-detail-description"><p className="project-detail-description-p" style={{height: 60, whiteSpace: "normal"}}>{description}</p></div>
       </Link>
     </Button>
   );

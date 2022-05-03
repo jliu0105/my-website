@@ -43,10 +43,14 @@ class HomePage extends React.Component {
           <GithubOutlined
             className="icons-github"
             onClick={() => {
-              window.location.href = "https://baidu.com";
+              window.location.href = "https://github.com/pineapplesucks?tab=repositories";
             }}
           />
-          <LinkedinOutlined className="icons-linkedin" />
+          <LinkedinOutlined className="icons-linkedin" 
+            onClick={() => {
+              window.location.href = "https://www.linkedin.com/in/jiyu-liu-5269b6203/";
+            }}
+          />
           <Popover placement="bottom" content={"437-333-6785"} title="Phone Number" trigger="click">
             <PhoneOutlined className="icons-phone" />
           </Popover>

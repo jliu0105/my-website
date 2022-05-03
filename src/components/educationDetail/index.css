@@ -32,5 +32,15 @@
     width: 100%;
     height: 20%;
     text-align: left;
+    display: inline;
+    white-space: initial;
+    word-break: break-all;
+
+    
+    /* background-color: cyan; */
+}
+
+.project-detail-description-p{
+    word-break: break-all;
     /* background-color: cyan; */
 }

@@ -9,6 +9,14 @@ import mineSweeperImg from "../../components/images/projectsImages/mineSweeperIm
 import historyTransactionImg from "../../components/images/projectsImages/historyTransactionImg.jpg";
 import reactThermalGraph from "../../components/images/projectsImages/reactThermalGraph.jpg";
 import arduinoWaterLevelSensorImg from "../../components/images/projectsImages/arduinoWaterLevelSensorImg.jpg";
+import videoPlayerCImg from "../../components/images/projectsImages/videoPlayerCImg.jpg";
+import AIPantingStyleDetectorImg from "../../components/images/projectsImages/AIPantingStyleDetectorImg.jpg";
+
+
+
+import AITranslatorImg from "../../components/images/projectsImages/AITranslatorImg.jpg";
+
+
 import "./index.css";
 import "../../components/projectDetail/index.css";
 import "antd/dist/antd.css";
@@ -35,7 +43,24 @@ class Projects extends React.Component {
               description="Technology: Reactjs, TypeScript, Redux, C#, .Net Core, MySQL"
               projectClassName="projects-detail-left"
             />
+            <ProjectDetail
+              url={AIPantingStyleDetectorImg}
+              detailUrl="AIPantingStyleDetector"
+              title="Painting Style Detector (AI)"
+              description="Technology & Algorithm: Python, PyTorch, Django, VGG16(CNN, Dense, BatchNormal)"
+              projectClassName="projects-detail-right"
+            />
             <ProjectDetail url={githubAppImg} detailUrl="githubApp" title="Github App" description="Technology: React Native, Redux, HTML/CSS, Javascript" projectClassName="projects-detail-right" />
+
+            <ProjectDetail
+              url={AITranslatorImg}
+              detailUrl="AITranslator"
+              title="Chinese to English Translator (AI)"
+              description="Technology & Algorithm: Python, Tensorflow, Keras, Jupyter Notebook, seq2seq, Transformer, linear algebra"
+              projectClassName="projects-detail-left"
+            />
+
+
             <ProjectDetail
               url={pythonSearchEngineImg}
               detailUrl="pythonSearchEngine"
@@ -62,14 +87,14 @@ class Projects extends React.Component {
               url={historyTransactionImg}
               detailUrl="historyTransaction"
               title="History Transaction List"
-              description="Technology, Algorithm: C++, Linked List, class"
+              description="Technology & Algorithm: C++, Linked List, class"
               projectClassName="projects-detail-right"
             />
             <ProjectDetail
               url={mineSweeperImg}
               detailUrl="mineSweeper"
               title="MineSweeper Game"
-              description="Technology, Algorithm: C++, hexadecimal addition and subtraction"
+              description="Technology & Algorithm: C++, hexadecimal addition and subtraction"
               projectClassName="projects-detail-left"
             />
             <ProjectDetail
@@ -78,6 +103,13 @@ class Projects extends React.Component {
               title="Water Level Sensor"
               description="Technology: Arduino, C"
               projectClassName="projects-detail-right"
+            />
+            <ProjectDetail
+              url={videoPlayerCImg}
+              detailUrl="videoPlayerC"
+              title="Video Player"
+              description="Technology: C++, QT, ffmpeg, PCM"
+              projectClassName="projects-detail-left"
             />
           </div>
         </div>

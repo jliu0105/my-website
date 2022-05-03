@@ -1,5 +1,5 @@
 {
-  "homepage": "http://pineapplesucks.github.io/my-website",
+  "homepage": "http://jliu0105.github.io/my-website",
   "name": "my-app",
   "version": "0.1.0",
   "private": true,
@@ -15,7 +15,7 @@
     "react-scripts": "4.0.3",
     "react-spring": "^9.2.4",
     "react-toggle": "^4.1.2",
-    "typescript": "^4.4.2",
+    "typescript": "^4.4.3",
     "web-vitals": "^1.1.2"
   },
   "scripts": {
