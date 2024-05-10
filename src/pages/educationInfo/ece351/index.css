@@ -1,0 +1,16 @@
+.ece351-header {
+    font-size: 400%;
+    margin-top: 10%;
+    /* background-color: pink; */
+  }
+  
+  .ece351-content {
+    position: relative;
+    width: 80%;
+    margin-left: 10%;
+    height: 2000px;
+    /* background-color: cadetblue; */
+    text-align: left;
+  }
+  
+  
