@@ -1,0 +1,25 @@
+.compilerX-header {
+    font-size: 400%;
+    margin-top: 10%;
+  }
+  
+  .compilerX-content {
+    position: relative;
+    width: 80%;
+    margin-left: 10%;
+    height: 2500px;
+    text-align: left;
+  }
+  
+
+
+  .compilerX-trending-content{
+    width: 100%;
+    height: 20%;
+  }
+
+  .compilerX-frontPage-image, .compilerX-detail-image, .compilerX-trending-image{
+    float: right;
+    width: 21.8%;
+    height: 100%;
+  }

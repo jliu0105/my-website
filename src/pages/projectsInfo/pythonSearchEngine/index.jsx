@@ -15,24 +15,75 @@ class PythonSearchEngine extends Component {
         <div className="pythonSearchEngine-content">
           <Image src={pythonSearchEngineImg} style={{ height: "30%", width: "100%" }} />
           <Typography>
-            <Title>Introduction</Title>
+            <Title>Overview</Title>
             <Paragraph>
-              Data from three different websites is collected with Scrapy and is stored locally with MySQL; users can search information with this search engine and urls will be returned to the user.
+            For my comprehensive data aggregation and search engine project, I devised a robust system that harnesses the power of Scrapy to extract data from diverse web sources, focusing on three primary categories: articles, Q&A, and job positions. This data is systematically stored in a MySQL database, ensuring efficient retrieval and organization. I tackled the challenge of data extraction from sites requiring login by automating authentication processes, adeptly handling rate limits and captchas to maintain a steady flow of data. The frontend of the system is built on Django, integrated with Elasticsearch to enhance the search functionality, allowing users to perform quick and precise searches across the collected data. This setup not only provides a seamless user experience through predictive search results and personalized content such as trending topics and individual search history but also addresses significant aspects like security and performance optimization to handle large data volumes and high user traffic effectively. Through this project, I have significantly advanced my skills in web scraping, data management, and frontend development, delivering a comprehensive solution that simplifies access to a wide range of information for users.
             </Paragraph>
+            <Title>Technical Stack and Implementation Details:</Title>
+            <Title level={3}>Data Collection</Title>
             <Paragraph>
-              The website can search three main types of information, namely articles, Q&A and Job positions. Each type matches certain websites to get data from. The “Hot Searching” section below
-              demonstrates the topics that are most frequently searched on the Internet. The “My Search” section shows the past searching history of the user.
+              <ul>
+                <li>
+                Scrapy: I utilized Scrapy, a powerful web-crawling framework, to automate data extraction from targeted websites. I wrote custom spiders for each data category to navigate through pages and collect necessary information.
+
+                </li>
+                <li>
+                XPath and CSS Selectors: These tools were crucial for accurately pinpointing and retrieving data elements within the HTML structure of the web pages.
+
+                </li>
+                <li>
+                Authentication Handling: For websites requiring authentication, I implemented methods in Python to simulate a logged-in state, allowing the spider to access and scrape protected content.
+
+                </li>
+                <li>
+                Rate Limiting and Captchas: I incorporated techniques to handle IP bans and captchas, ensuring continuous data collection without interruptions.
+
+                </li>
+              </ul>
             </Paragraph>
-            <Title>Technology</Title>
-            <Title level={3}>Data Tracking</Title>
+            <Title level={3}>Data Storage</Title>
             <Paragraph>
-              Utilized XPath and CSS to get data from the website. For websites that require log in to get information, I use Python to simulate a login status. The data are saved by using “Spider”,
-              “Item”, “Item loader”, “pipeline”, “feed export” and “CrawlSpider” function from Scrapy. I also use python to break through the verification code and IP frequency limitation.
+              <ul>
+                <li>
+                MySQL: All scraped data is structured and stored in a MySQL database, allowing for efficient data retrieval and management. The database design is optimized for quick searches and data retrieval.
+                </li>
+              </ul>
             </Paragraph>
-            <Title level={3}>Front End</Title>
+            <Title level={3}>Front End Development</Title>
             <Paragraph>
-              The web page is created by elasticsearch and django. Users can select topics that they want to search. When a word or some letters are inputted in the searching bar, the website will
-              show some possible results that the users want to search.
+              <ul>
+                <li>
+                Django: I used Django to construct the web application due to its robustness and ease of integration with Python scripts. Django's templating features helped in presenting data dynamically based on user queries.
+                </li>
+                <li>
+                Elasticsearch: Integrated with Django, Elasticsearch enhances the search functionality by providing fast and precise search capabilities. It indexes the data stored in MySQL to speed up query processing.
+
+                </li>
+              </ul>
+            </Paragraph>
+            <Title level={3}>User Interface</Title>
+            <Paragraph>
+              <ul>
+                <li>
+                Search Functionality: The interface includes a search bar that suggests potential results as users type, enhancing the user experience by making information retrieval faster and more intuitive.
+                </li>
+                <li>
+                Hot Searching and My Search Sections: The 'Hot Searching' section highlights trending search queries, while 'My Search' keeps track of a user’s search history, personalizing the user experience.
+
+                </li>
+              </ul>
+            </Paragraph>
+            <Title level={3}>Security and Performance</Title>
+            <Paragraph>
+              <ul>
+                <li>
+                Data Privacy and Security: Implemented security measures to protect sensitive data and user information.
+                </li>
+                <li>
+                Performance Optimization: Continually monitored and optimized the performance of both the scraping bots and the search engine to handle large volumes of data and high user traffic efficiently.
+
+                </li>
+              </ul>
             </Paragraph>
           </Typography>
         </div>

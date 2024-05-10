@@ -17,7 +17,7 @@ const EducationDetail = (props) => {
       <Link to={`/education/${detailUrl}`} style={{ color: "black" }}>
         <div className="project-detail-title">
           {" "}
-          <Title level={2}>{title}</Title>
+          <Title level={3} className="project-detail-title-text">{title}</Title>
         </div>
         <div className="project-detail-description"><p className="project-detail-description-p" style={{height: 60, whiteSpace: "normal"}}>{description}</p></div>
       </Link>

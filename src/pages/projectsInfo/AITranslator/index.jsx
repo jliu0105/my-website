@@ -4,6 +4,8 @@ import AITranslatorImg from "../../../components/images/projectsImages/AITransla
 import { NavigationBar } from "../../../components/Navigation/NavigationBar";
 import attentionDiagram from "../../../components/images/projectsImages/AITranslator/attentionDiagram.jpg"
 import transformerDiagram from "../../../components/images/projectsImages/AITranslator/transformerDiagram.jpg"
+import { GithubOutlined } from '@ant-design/icons';
+
 import "./index.css";
 
 const { Title, Paragraph, Text, Link } = Typography;
@@ -13,7 +15,12 @@ class AITranslator extends Component {
     return (
       <div className="AITranslator-homePage">
         <NavigationBar />
-        <div className="AITranslator-header">Chinese to English Translator (AI)</div>
+        <div className="AITranslator-header">
+        Chinese to English Translator (AI) &nbsp;
+        <a href="https://github.com/jliu0105/translator" target="_blank" rel="noopener noreferrer">
+          <GithubOutlined />
+        </a>
+      </div>
         <div className="AITranslator-content">
           <img src={AITranslatorImg} style={{ height: "23%", width: "100%" }} />
           <Typography>

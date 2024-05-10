@@ -4,7 +4,7 @@ import { MailOutlined, GithubOutlined, LinkedinOutlined, PhoneOutlined, MenuUnfo
 import { useSpring, animated } from "react-spring";
 import AboutMe from "../../components/aboutMe/index";
 import "./index.css";
-import "antd/dist/antd.css";
+// import "~antd/dist/antd.css";
 import { NavigationBar } from "../../components/Navigation/NavigationBar";
 
 class HomePage extends React.Component {

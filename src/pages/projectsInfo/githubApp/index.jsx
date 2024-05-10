@@ -5,6 +5,8 @@ import githubAppFrontPageImg from "../../../components/images/projectsImages/git
 import githubAppDetailImg from "../../../components/images/projectsImages/githubApp/githubAppDetailImg.jpg";
 import githubAppTrendingImg from "../../../components/images/projectsImages/githubApp/githubAppTrendingImg.jpg";
 import { NavigationBar } from "../../../components/Navigation/NavigationBar";
+import { GithubOutlined } from '@ant-design/icons';
+
 import "./index.css";
 
 const { Title, Paragraph, Text, Link } = Typography;
@@ -14,7 +16,12 @@ class GithubApp extends Component {
     return (
       <div className="githubApp-homePage">
         <NavigationBar />
-        <div className="githubApp-header">Github App</div>
+        <div className="githubApp-header">
+        GitHub Project Management App &nbsp;
+        <a href="https://github.com/jliu0105/github_advanced" target="_blank" rel="noopener noreferrer">
+          <GithubOutlined />
+        </a>
+        </div>
         <div className="githubApp-content">
           <Image src={githubAppImg} style={{ height: "25%", width: "100%" }} />
           <Typography>

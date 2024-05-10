@@ -3,6 +3,8 @@ import { Image, Typography } from "antd";
 import nodeBlogImg from "../../../components/images/projectsImages/nodeBlogImg.jpg";
 import nodeBlogSigninImg from "../../../components/images/projectsImages/nodeBlogImages/nodeBlogSigninImg.jpg";
 import { NavigationBar } from "../../../components/Navigation/NavigationBar";
+import { GithubOutlined } from '@ant-design/icons';
+
 import "./index.css";
 
 const { Title, Paragraph, Text, Link } = Typography;
@@ -12,7 +14,12 @@ class NodeBlog extends Component {
     return (
       <div className="nodeBlog-homePage">
         <NavigationBar />
-        <div className="nodeBlog-header">Blog</div>
+        <div className="nodeBlog-header">
+        Blog &nbsp;
+        <a href="https://github.com/jliu0105/blog-nodejs" target="_blank" rel="noopener noreferrer">
+          <GithubOutlined />
+        </a>
+      </div>
         <div className="nodeBlog-content">
           <Image src={nodeBlogImg} style={{ height: "30%", width: "100%" }} />
           <Typography>
